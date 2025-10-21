@@ -47,6 +47,7 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
         txtAreaPeristiwa = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("APLIKSI PENGHITUNG UMUR");
@@ -65,6 +66,10 @@ public class PenghitungUmurFrame extends javax.swing.JFrame {
                 dateChooserTanggalLahirPropertyChange(evt);
             }
         });
+
+        txtUmur.setEditable(false);
+
+        txtHariUlangTahunBerikutnya.setEditable(false);
 
         btnHitung.setText("Hitung Umur");
         btnHitung.addActionListener(new java.awt.event.ActionListener() {
